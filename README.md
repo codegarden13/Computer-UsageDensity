@@ -1,12 +1,11 @@
 
-# 'How' is the Usage of a Workplace ?
+# Enumerate Workplace - Usage
 ## Get a dataset about a windows machine's usage.
 
-This powershell will make a number from users and their last usage of that computer this year. We get a timespan, the user list and a magic factor. 
-
-- Who has been using this computer during this year. 
+- Who used this computer during this year. 
 - When did each of this users use this client last time. 
 - Timespan (daycount) between first and last usage over all profiles which have been active this year.
+- The "Magic Factor"
 
 ## Sidenotes
 - We test against last writetime of each user's profile. 
