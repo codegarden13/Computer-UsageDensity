@@ -1,6 +1,6 @@
 
 # Enumerate Workplace - Usage
-## Get a dataset about a windows machine's usage.
+Purpose: Get a dataset about each windows machine's usage in an  organisation.
 
 - Who used this computer during this year. 
 - When did each of this users use this client last time. 
