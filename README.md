@@ -8,8 +8,8 @@
 - The "Magic Factor"
 
 ## Sidenotes
-- We test against last writetime of each user's profile. 
-- Result for lastwritetime of each profile folder corresponds to the last file change of ntuserdat.pol of the profile.
+- Timestamp-Test are going against lastwritetime property of each user's profile. 
+- Learned: This corresponds to the last file change of ntuserdat.pol of the profile.
 - Ntuser.dat's timestamp is not sufficiant, as it changes at each cumulative update over all profiles. (Presents of this file is indicator that the folder is a real user profile)
 
 ## Get the "magic factor"
