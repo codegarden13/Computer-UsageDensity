@@ -1,18 +1,18 @@
 # Analyzing Usage of a Workplace
 This will make a number from users and their last usage of that computer.
 
-- Check what Users have been using this computer this year. 
-- Find out when each of them used it last time. 
-- Get the Timespan between first and lasdt usage over all profiles
+- Who has been using this computer during this year. 
+- When did each of them use it last time. 
+- Get the timespan between first and last usage over all profiles which have been active this year.
 
-Testing was done against last writetime of each user profile. This point in time correspons to the last file change of ntuserdat.pol in the profile.
-Ntuser.dat was not sufficiant as it changes at each cumulative update fur all ntuser.dat.
+Testing was done against last writetime of each user profile. This point in time corresponds to the last file change of ntuserdat.pol in the profile.
+Ntuser.dat was not sufficiant: It changes at each cumulative update over all profiles.
 
-You may divide 
+## Divide results to get a valid factor
 - the count of days between all that last usages
 - with the count of that active profiles
 
-## Result:
+## Final Result:
 
 A factor which may be usable to describe usage-density.
 
