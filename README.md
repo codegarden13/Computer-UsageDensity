@@ -1,6 +1,7 @@
 
-# Enumerate Workplace - Usage
+# How is Workplace - Usage ?
 Get data about each windows machine's usage in an organisation.
+
 
 - Who used this computer during this year. 
 - When did each of this users use this client last time. 
@@ -28,3 +29,4 @@ This should be the final indicator. Maybe there are other indicators like profil
 - Find the master user 
 - Enumerate terminal server usage
 - Query dateranges more precise
+- get installed software (no msi / user context etc.)
