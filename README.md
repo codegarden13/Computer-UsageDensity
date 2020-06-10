@@ -1,11 +1,12 @@
 
 # Enumerate Workplace - Usage
-Purpose: Get a dataset about each windows machine's usage in an  organisation.
+Get data about each windows machine's usage in an organisation.
 
 - Who used this computer during this year. 
 - When did each of this users use this client last time. 
 - Timespan (daycount) between first and last usage over all profiles which have been active this year.
-- The "Magic Factor"
+- "Magic Factor" - result of profile changes in the usage timespan: Count of using users, count of usage days over all days for the queried timespan.
+
 
 ## Sidenotes
 - Timestamp-Test are going against lastwritetime property of each user's profile. 
@@ -15,17 +16,15 @@ Purpose: Get a dataset about each windows machine's usage in an  organisation.
 ## Get the "magic factor"
 This should be the final indicator. Maybe there are other indicators like profile age, size ... 
 
-Divide two results to get a maybe-relevant factor:
 ```
-(Daycount between all last client-usages) / (count of active profiles thois year)
+(Daycount between client-usages this year) / (count of active profiles this year)
 ```
-## Result:
+## Results:
 
-A factor which may be usable to describe usage-density.
+- "magic factor": may be usable to describe usage-density.
+- Usage-Date-Range: When has the machine been used from which user over the queried year.
 
-A date-range, when the machine has been used and from which user.
-
-## Thesis
-Factor tends to zero: one user is using the machine. 
-Factor is high, more users depend on that machine in the given daterange (for now: This year)
-Maxybe the factor helpd to find real "Standard - Clients"
+## not implemented yet
+- Find the master user 
+- Enumerate terminal server usage
+- Query dateranges more precise
