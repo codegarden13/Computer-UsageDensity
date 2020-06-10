@@ -1,5 +1,5 @@
 
-# How is Workplace - Usage ?
+# Workplace - Usage
 Get data about each windows machine's usage in an organisation.
 
 
