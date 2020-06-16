@@ -1,21 +1,19 @@
 
 # Workplace - Usage
-Get data about each windows machine's usage in an organisation.
-
+Data about each windows machine's usage in an organisation is not only an economic metric about the degree of capacity utilisation of the workplace.
 
 - Who used this computer during this year. 
 - When did each of this users use this client last time. 
 - Timespan (daycount) between first and last usage over all profiles which have been active this year.
 - "Magic Factor" - result of profile changes in the usage timespan: Count of using users, count of usage days over all days for the queried timespan.
 
-
 ## Sidenotes
 - Timestamp-Test are going against lastwritetime property of each user's profile. 
-- Learned: This corresponds to the last file change of ntuserdat.pol of the profile.
+- Learned: Last Profile Folder changedate corresponds to the last file change of ntuserdat.pol of the profile.
 - Ntuser.dat's timestamp is not sufficiant, as it changes at each cumulative update over all profiles. (Presents of this file is indicator that the folder is a real user profile)
 
 ## Get the "magic factor"
-This should be the final indicator. Maybe there are other indicators like profile age, size ... 
+This could be the final indicator. Maybe there are other indicators like profile age, size ... 
 
 ```
 (Daycount between client-usages this year) / (count of active profiles this year)
